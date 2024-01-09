@@ -7,12 +7,18 @@ public class Friend {
     private String hp;
     private String school;
 
+    //생성자
+    public Friend(String name, String hp, String school) {
+		this.name = name;
+		this.hp = hp;
+		this.school = school;
+	}
+
     
     // getter/setter 작성
     public String getName() {
 		return name;
 	}
-
 
 	public void setName(String name) {
 		this.name = name;
