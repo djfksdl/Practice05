@@ -19,14 +19,15 @@ public class Book {
 		this.bookNo = bookNo;
 		this.title = title;
 		this.author = author;
+		this.stateCode = 1;
 	}
 
-	public Book(int bookNo, String title, String author, int stateCode) {
-		this.bookNo = bookNo;
-		this.title = title;
-		this.author = author;
-		this.stateCode = stateCode;
-	}
+//	public Book(int bookNo, String title, String author, int stateCode) {
+//		this.bookNo = bookNo;
+//		this.title = title;
+//		this.author = author;
+//		
+//	}
 	//메소드-gs
 
 	public int getBookNo() {
@@ -55,7 +56,7 @@ public class Book {
 
 	public int getStateCode() {
 		
-		return stateCode =1;
+		return stateCode;
 	}
 
 	public void setStateCode(int stateCode) {
@@ -64,14 +65,17 @@ public class Book {
 	
 	//메소드-일반
 	public void rent() {
+		this.stateCode = 0;
 		System.out.println(this.title + "이(가) 대여 됐습니다.");
 	}
 	public void print() {
+		String rentState ="";
 		if(stateCode == 1) {
-			System.out.println("재고 있음");
+			rentState = "재고있음";
 		}else if(stateCode ==0) {
-			System.out.println("대여중");
+			rentState = "대여중";
 		}
+		System.out.println(bookNo+title + author + rentState);
 	}
 	
 

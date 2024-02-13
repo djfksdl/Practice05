@@ -22,16 +22,18 @@ public class Account {
 		this.balance = balance;
 	}
     
-    //??필요한 메소드 작성
-	public void deposit(int val) {
-		System.out.println(balance  + val);
+    //필요한 메소드 작성
+	public void deposit(int money) {
+//		System.out.println(this.balance  + money);
+		this.balance = this.balance + money;
 	}
-	public void withdraw(int val) {
-		System.out.println(balance - val);
+	public void withdraw(int money) {
+//		System.out.println(this.balance - money);
+		this.balance = this.balance - money;
 		
 	}
 	public void showBalance() {
-		System.out.println(balance);
+		System.out.println(this.balance );
 	}
 	
     
