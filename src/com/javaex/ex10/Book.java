@@ -19,14 +19,14 @@ public class Book {
 		this.bookNo = bookNo;
 		this.title = title;
 		this.author = author;
-		this.stateCode = 1;
+		this.stateCode = 1; // 1이라는 고정값이라서 파라미터에 들어가지 않아도 됨!
 	}
 
 //	public Book(int bookNo, String title, String author, int stateCode) {
 //		this.bookNo = bookNo;
 //		this.title = title;
 //		this.author = author;
-//		
+//		여기에 써주려고하면 값을 집어 넣어야한다.
 //	}
 	//메소드-gs
 
